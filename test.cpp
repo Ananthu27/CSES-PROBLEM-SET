@@ -1,12 +1,21 @@
+#include <bits/stdc++.h>
+#include <string>
 #include <iostream>
-#include <vector>
-#include <algorithm>
-#include <set>
 using namespace std;
-#define ll long long
+
 int main()
 {
-    multiset<ll> a = {3, 4, 5, 6};
-    cout << *a.upper_bound(3) << endl;
-    cout << *a.lower_bound(3) << endl;
+    vector<int> a = {1, 1, 2, 2, 3, 4, 5, 5};
+    vector<int> b = {1, 1, 2, 5};
+
+    set_difference(a.begin(), a.end(), b.begin(), b.end(), a.begin());
+    a.resize(a.size() - b.size());
+
+    for (auto value : a)
+        cout << value << " ";
+    cout << endl;
+
+    for (auto value : b)
+        cout << value << " ";
+    cout << endl;
 }

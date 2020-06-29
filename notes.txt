@@ -1,4 +1,0 @@
-set.lower_bound(key);
-    will return set.end() if no value >= key
-    will return set.begin() if no value < key
-    same applies for any other set 
