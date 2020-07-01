@@ -1,16 +1,7 @@
 #include <bits/stdc++.h>
-
 using namespace std;
 
-// #define DEBUG 1
-
-#ifdef DEBUG
-#define log(x) cout << (x) << endl
-#define logspace(x) cout << (x) << " "
-#else
-#define log(x)
-#define logspace(x)
-#endif
+typedef long long ll;
 
 int main()
 {
