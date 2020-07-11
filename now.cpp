@@ -10,5 +10,5 @@ int main()
 
     // main code END
 
-    return 0;
+    return 1;
 }
